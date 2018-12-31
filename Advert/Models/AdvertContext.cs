@@ -7,7 +7,7 @@ namespace Advert.Models
         public AdvertContext(DbContextOptions<AdvertContext> options) : base(options)
         {
         }
-        public DbSet<TChannel> TChannels { get; set; }
+        public DbSet<TChannel> Channels { get; set; }
 
     }
 }
