@@ -20,7 +20,8 @@ namespace Advert
         {
             Configuration = configuration;
         }
-        public IConfiguration Configuration { get; }
+
+        private IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AdvertContext>(options =>
